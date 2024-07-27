@@ -52,7 +52,7 @@ typedef enum {
     PUS=0x20,            POP=0x21,
     STR=0x22,            STX=0x23,            ST8=0x24,
     LDM=0x25,            LMX=0x26,            LM8=0x27,
-    JUN=0x28,            HLT=0x29,
+    JUN=0x28,            HLT=0x29,            SYS=0x2A,
     INSTRUCTION_MAX
 } INSTRUCTION;
 

@@ -34,7 +34,7 @@ uint16_t set16(uint64_t adr, uint16_t val, STATE *state) { *(uint16_t*)(state->b
 uint64_t set64(uint64_t adr, uint64_t val, STATE *state) { *(uint64_t*)(state->buffer.content+adr) = val; }
 
 void instruction(INSTRUCTION inst, STATE *state) {
-    uint64_t arg[2];
+    uint64_t arg[10];
     state->reg[IP]++;
     switch(inst) {
     case NOP: break;
